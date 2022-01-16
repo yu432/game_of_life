@@ -55,7 +55,8 @@ class Board:
             time.sleep(0.1)
 
 
-w, h = 60, 16
+print("Input width and height of table. Default is 60 * 50 for fullscreen")
+w, h = map(int, (input().split()))
 table = [["" for x in range(w)] for y in range(h)]
 b = Board(table)
 b.fill()
