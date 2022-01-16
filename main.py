@@ -15,7 +15,7 @@ class Board:
     def fill(self):
         for row in self.table_:
             for elem in range(len(row)):
-                x = random.randint(0, 8)
+                x = random.randint(0, 20)
                 if x < 3:
                     row[elem] = "█"
                 else:
@@ -55,7 +55,7 @@ class Board:
             time.sleep(0.1)
 
 
-w, h = 30, 8
+w, h = 60, 16
 table = [["" for x in range(w)] for y in range(h)]
 b = Board(table)
 b.fill()
